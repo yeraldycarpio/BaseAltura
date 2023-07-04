@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BaseAltura.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+        Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="base.png"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Base y Altura de un Triangulo"
+                TextColor="Yellow"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="35"
+                HorizontalOptions="Center" />
+            
+
+            <Label Text="Base" FontSize="20" TextColor="White" VerticalOptions="Center"/>
+            <Entry Placeholder="Escriba la base del triangulo" x:Name="Base" Keyboard="Numeric"/>
+
+            <Label Text="Altura" FontSize="20" TextColor="White" VerticalOptions="Center"/>
+            <Entry Placeholder="Escriba la altura del triangulo" x:Name="Altura" Keyboard="Numeric"/>
+
+            <Label Text="Resultado" FontSize="25" TextColor="BlueViolet" VerticalOptions="Center"/>
+            <Entry Placeholder="El Resultado Es:" x:Name="calcular" IsEnabled="False"/>
+
+            <Button Text="Calcular" x:Name="BtnCalcular" Clicked="BtnCalcular_Clicked"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
